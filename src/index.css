@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.show {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 20px;
+}
+
+.color {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(41, 38, 38);
+}
+.box {
+  width: 400px;
+  height: 200px;
+  margin-top: 6rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.answer {
+  display: flex;
+  margin: 0 10px;
+}
+
+.ans {
+  padding: 10px;
+}
+
+.correct {
+  color: green;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.wrong {
+  color: crimson;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.heading {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 400px) {
+  .heading {
+    text-align: center;
+  }
+  .box {
+    width: 200px;
+    height: 200px;
+  }
+  .show {
+    margin-top: 60px;
+  }
+  .correct,
+  .wrong {
+    font-size: 2rem;
+  }
+}
